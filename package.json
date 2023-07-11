@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "sass": "^1.63.6"
+  },
+
+  "scripts" : {
+    "dev": "sass --watch --update --style=compressed assets/sass:css"
+  }
+}

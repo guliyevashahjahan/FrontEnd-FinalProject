@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  width: 100%;
+}
+header .header-top {
+  background: transparent;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 12px 0;
+}
+header .header-top .left {
+  display: flex;
+  align-items: center;
+}
+header .header-top p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #5D666F;
+}
+header .header-top .right {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header-top .phone i {
+  margin-left: 30px;
+}
+header .header-top i {
+  color: #B00F0F;
+  margin-right: 12px;
+}
+header .header-top a {
+  color: #181A1C;
+  font-weight: 500;
+}
+
+.header-main a {
+  padding: 36px 0;
+  display: block;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.header-main img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+.header-main .main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-main ul {
+  display: flex;
+  align-items: center;
+}
+.header-main ul li {
+  font-size: 16px;
+  line-height: 26px;
+  color: #5D666F;
+}
+.header-main ul li a {
+  padding: 48px 0;
+  display: block;
+  color: #1C2539;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}/*# sourceMappingURL=main.css.map */

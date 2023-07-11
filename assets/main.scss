@@ -1,0 +1,80 @@
+@import "reset", "variables";
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+    .header-top{
+        background: transparent;
+        border-bottom: 1px solid #E8E8E8;
+        padding: 12px 0;
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        p{
+            margin: 0;
+            font-size: $font-size-b2;
+            line-height: $line-height-b2;
+            font-weight: $p-regular;
+            color: $color-body;
+        }
+        .right {
+            display: flex;
+    justify-content: flex-end;
+        }
+        .phone i {
+            margin-left: 30px;
+        }
+        i {
+            color: $color-primary-5;
+            margin-right: 12px;
+        }
+        a{
+            color: #181A1C;
+    font-weight: 500;
+        }
+    }
+    
+
+}
+
+.header-main {
+    a{
+    padding: 36px 0;
+    display: block;
+    max-width: max-content;
+    }
+    img{
+        border: 0;
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+    }
+    .main {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+    align-items: center;
+    li{
+        font-size: $font-size-b1;
+        line-height: $line-height-b1;
+        color: $color-body;
+        a{
+            padding: 48px 0;
+    display: block;
+    color: #1C2539;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+    min-width: max-content;
+        }
+    }
+    
+}
+
+}
