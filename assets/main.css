@@ -22,6 +22,11 @@ input {
   outline: none;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #5D666F;
+}
+
 header {
   position: sticky;
   top: 0px;

@@ -1,4 +1,8 @@
 @import "reset", "variables";
+body{
+    font-family: "DM Sans", sans-serif;
+    color: $color-body;
+}
 header {
     position: sticky;
     top: 0px;
