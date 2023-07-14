@@ -34,7 +34,7 @@ body {
 header {
   position: sticky;
   top: 0px;
-  z-index: 5;
+  z-index: 1000;
   width: 100%;
   .header-top {
     background: transparent;
@@ -69,6 +69,7 @@ header {
     }
   }
 }
+
 
 .header-main {
   position: sticky;
@@ -124,7 +125,7 @@ header {
   position: absolute;
 
   left: 0;
-  bottom: 50px;
+  bottom: 30px;
   height: 2px;
   width: 0%;
   border-radius: 1px;
@@ -280,6 +281,8 @@ header {
   height: 1150px;
   padding: 12px 0;
   .banner-btn{
+    position: relative;
+    z-index: 10;
     margin-top: 30px;
     &:hover{
         background-color: $color-primary-alta;
@@ -294,7 +297,7 @@ animation: jump-2 5s linear infinite;
 
 }
 .shape img {
-   
+  
         border: 0;
     vertical-align: middle;
     max-width: 100%;
@@ -313,7 +316,7 @@ animation: jump-2 5s linear infinite;
     }
 }
 
-.pre {
+.pre1 {
   font-weight: 700;
   font-size: 60px;
 }
@@ -335,4 +338,198 @@ animation: jump-2 5s linear infinite;
     line-height: 26px;
     color: #74787C;
     margin-left: 90px;
+}
+
+.services {
+  position: relative;
+}
+.shape-business-services {
+  position: absolute;
+  left: -13%;
+  top: -250%;
+  z-index: -1;
+}
+.pre {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #B00F0F;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.title {
+  margin-top: 13px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #181A1C;
+}
+.section-title {
+  position: relative;
+    z-index: 4;
+}
+.service-item {
+  background: linear-gradient(180deg, rgba(235, 235, 235, 0) 0%, #F7F7F7 100%);
+  border-radius: 20px;
+  padding: 100px 40px 40px 40px;
+  position: relative;
+  &:hover .icon img{
+    transform: rotate(-360deg);
+  }
+  h5{
+    font-size: $h5;
+    line-height: 1.24;
+  }
+  p{
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-body;
+    font-weight: $p-regular;
+    margin-top: 15px;
+  }
+}
+.mt--80{
+  margin-top: 80px;
+}
+.icon {
+  position: absolute;
+    top: -70px;
+    left: 10px;
+    transition: 0.6s;
+    z-index: 2;
+    img{
+      position: relative;
+      z-index: 5;
+      transition: 1s;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 56%;
+      height: 40px;
+      width: 40px;
+      background: #000;
+      filter: blur(27px);
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+}
+.bg-shape{
+  background-image: url(	https://reactheme.com/products/html/finbiz/assets/images/bg/bg-shape-1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.about{
+  padding: 120px 0px;
+}
+
+.about-inner {
+  p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: $p-regular;
+    color: $color-body;
+  }
+}
+.item-check-inner {
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 58px rgba(0, 0, 0, 0.08);
+  border-left: 7px solid #B00F0F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.single-check {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #181A1C;
+  i{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 32px;
+    color: #B00F0F;
+  }
+
+}
+.contact-inner-about{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  .single-left {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    border-right: 1px solid #EBEBEB;
+    padding-right: 50px;
+    img{
+      margin-right: 16px;
+    }
+    .title{
+      font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    }
+    span{
+      font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #B00F0F;
+    }
+  }
+  .single-right {
+    display: flex;
+    align-items: center;
+    img{
+      margin-right: 16px;
+    }
+    span{
+      font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 7px;
+    color: #5D666F;
+    }
+    a{
+      font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #181A1C;
+    transition: 0.3s;
+    &:hover{
+      color: $color-primary-5;
+    }
+    }
+  }
+}
+
+.thumbnail-about-six {
+  margin-top: -180px;
+  margin-left: -160px;
+  margin-bottom: -157px;
+img{
+  position: relative;
+    min-width: 140%;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  
+  .header-top {
+    border-bottom: none !important;
+  }
+ header .quote-btn {
+  display: none;
+ }
 }
