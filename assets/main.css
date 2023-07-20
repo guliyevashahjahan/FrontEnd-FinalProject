@@ -1259,11 +1259,325 @@ header .header-top a {
   padding: 7px 13px;
 }
 
-.content-inner .main {
+.blog {
+  padding-bottom: 120px;
+}
+
+.blog-item-inner .top-blog {
+  text-transform: uppercase;
+}
+.blog-item-inner .title {
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #181A1C;
+  margin-bottom: 10px;
+}
+.blog-item-inner .title:hover {
+  color: #B00F0F;
+}
+.blog-item-inner i {
+  background: #B00F0F;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 12px;
+  font-size: 14px;
+  padding: 13px;
+  margin-right: 12px;
+}
+.blog-item-inner .main {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: #B00F0F;
+}
+.blog-item-inner .rts-read-more {
+  font-weight: 600;
+  color: #1C2539;
+  transition: 0.3s;
+}
+.blog-item-inner .rts-read-more:hover {
+  color: #DF0A0A;
+}
+
+.footer {
+  background-repeat: no-repeat;
+  background: #0E1422;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 120px;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  background-image: url(https://reactheme.com/products/html/finbiz/assets/images/footer/h1-shape/02.png);
+  height: 800px;
+  width: 823px;
+  background-position: center;
+  bottom: -13%;
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+.footer .input-background {
+  background-image: url(https://reactheme.com/products/html/finbiz/assets/images/footer/callto-action.png);
+  background-repeat: no-repeat;
+  background-color: #DF0A0A;
+  background-blend-mode: multiply;
+  overflow: hidden;
+  border-radius: 100px;
+  background-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-size: cover;
+}
+.footer .left-wrapper {
+  margin-left: 80px;
+  padding: 45px 0;
+}
+.footer .left-wrapper p {
+  margin-bottom: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.footer .left-wrapper h3 {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: -5px;
+}
+.footer .input-area {
+  padding: 60px 0;
+  position: relative;
+}
+.footer .input-area input {
+  background: #FFFFFF;
+  border-radius: 100px;
+  height: 55px;
+  width: 547px;
+  color: #000;
+  padding: 0 186px 0 25px;
+  outline: none;
+  border: none;
+}
+.footer .input-area button {
+  border: none;
+  background-color: #B00F0F;
+  border-radius: 30px;
+  position: absolute;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  right: 88px;
+  padding: 17px 30px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.3s;
+}
+.footer .input-area button:hover {
+  color: #000;
+}
+
+.footer-bottom {
+  padding-top: 120px;
+}
+.footer-bottom::after {
+  left: -30%;
+  top: -32%;
+  position: absolute;
+  background-image: url(https://reactheme.com/products/html/finbiz/assets/images/footer/h1-shape/03.png);
+  content: "";
+  height: 500px;
+  width: 523px;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+.footer-bottom h5 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.24;
+  font-weight: 700;
+}
+.footer-bottom .links-1 {
+  padding-left: 0;
+  margin-right: 30px;
+}
+.footer-bottom li {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  color: #5D666F;
+  list-style: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.footer-bottom li a {
+  color: #8B8F99;
+  transition: 0.3s;
+  position: relative;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.footer-bottom li a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: #B00F0F;
+  left: 29px;
+  bottom: 0;
+  transition: 0.3s;
+}
+.footer-bottom li a:hover {
+  color: #B00F0F;
+}
+.footer-bottom li a:hover i {
+  color: #fff;
+}
+.footer-bottom li a:hover::after {
+  width: 76%;
+}
+.footer-bottom li i {
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.mid-bg {
+  background: linear-gradient(180deg, #0E1422 -4.66%, #212631 100%);
+  border-radius: 15px;
+  padding: 40px;
+  margin: -40px 30px 0 30px;
+}
+.mid-bg p {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.mid-bg .contact-us {
+  display: block;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  background-color: #B00F0F;
+  border-radius: 30px;
+  color: #fff;
+  padding: 17px 30px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.mid-bg .contact-us:hover {
+  background-color: #FFECEC;
+  color: #000;
+}
+
+.left-thumbnail {
+  margin-right: 20px;
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.left-thumbnail img {
+  transition: 0.3s;
+}
+.left-thumbnail:hover img {
+  transform: scale(1.2);
+}
+
+.post-right p {
+  margin-bottom: 0;
+  color: #8B8F99;
+  font-size: 14px;
+  margin-top: -6px;
+}
+.post-right h6 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 0;
+  transition: 0.3s;
+}
+.post-right h6:hover {
+  color: #B00F0F;
+}
+.post-right .red-more {
+  color: #B00F0F;
+}
+.post-right .red-more i {
+  margin-left: 6px;
+  margin-bottom: -4px;
+  position: relative;
+  transition: 0.3s;
+}
+.post-right .red-more:hover i {
+  margin-left: 15px;
+}
+
+.rts-copyright-area {
+  border-top: 1px solid #21293D;
+  padding: 30px 0;
+}
+.rts-copyright-area p {
+  font-size: 16px;
+  color: #fff;
+}
+.rts-copyright-area::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background-image: url(https://reactheme.com/products/html/finbiz/assets/images/footer/h1-shape/01.svg);
+  height: 450px;
+  width: 450px;
+  right: -3%;
+  background-repeat: no-repeat;
+  bottom: -5%;
+}
+
+.loading-animation {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+}
+.loading-animation .left-animate {
+  width: 51%;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  top: 0px;
+  height: 100%;
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loading-animation .right-animate {
+  width: 51%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded-left {
+  left: -100%;
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded-right {
+  right: -100%;
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 @media screen and (max-width: 1200px) {

@@ -1199,14 +1199,327 @@ padding-bottom: 120px;
     }
     }
 }
-.content-inner {
+
+.blog{
+  padding-bottom: 120px;
+}
+
+
+.blog-item-inner {
+  .top-blog{
+    text-transform: uppercase;
+  }
+ .title {
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #181A1C;
+    margin-bottom: 10px;
+    &:hover{
+      color: $color-primary-5;
+    }
+  }
+  i{
+    background: #B00F0F;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 12px;
+    font-size: 14px;
+    padding: 13px;
+    margin-right: 12px;
+  }
   .main{
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     color: $color-primary-5;
   }
+  .rts-read-more{
+    font-weight: 600;
+    color:  #1C2539;
+    transition: 0.3s;
+    &:hover{
+      color: $color-primary;
+    }
+  }
 }
+.footer{
+  background-repeat: no-repeat;
+  background: #0E1422;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 120px;
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url(https://reactheme.com/products/html/finbiz/assets/images/footer/h1-shape/02.png);
+    height: 800px;
+    width: 823px;
+    background-position: center;
+    bottom: -13%;
+    background-size: cover;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+  .input-background{
+    background-image: url(https://reactheme.com/products/html/finbiz/assets/images/footer/callto-action.png
+    );
+    background-repeat: no-repeat;
+    background-color: #DF0A0A;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    border-radius: 100px;
+    background-position: center;
+    object-fit: contain;
+    background-size: cover;
+  }
+  .left-wrapper{
+    margin-left: 80px;
+    padding: 45px 0;
+    p{
+      margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    }
+    h3{
+      color: #fff;
+    margin-bottom: 0;
+    margin-top: -5px;
+    }
+  }
+  .input-area{
+    padding: 60px 0;
+    position: relative;
+    input{
+      background: #FFFFFF;
+    border-radius: 100px;
+    height: 55px;
+    width: 547px;
+    color: #000;
+    padding: 0 186px 0 25px;
+    outline: none;
+    border: none;
+    }
+    button{
+      border: none;
+      background-color: $color-primary-5;
+      border-radius: 30px;
+      position: absolute;
+      max-width: max-content;
+      right: 88px;
+      padding: 17px 30px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #fff;
+    transition: .3s;
+&:hover{
+  color: #000;
+}
+    }
+  }
+}
+.footer-bottom{
+  padding-top: 120px;
+  &::after{
+    left: -30%;
+    top: -32%;
+    position: absolute;
+    background-image: url(	https://reactheme.com/products/html/finbiz/assets/images/footer/h1-shape/03.png);
+    content: "";
+    height: 500px;
+    width: 523px;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+  h5{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: $h5;
+    line-height: 1.24;
+    font-weight: $s-bold;
+  }
+ .links-1{
+  padding-left: 0;
+  margin-right: 30px;
+ }
+  li{
+    font-size: $font-size-b1;
+    line-height: $line-height-b1;
+    margin-bottom: 10px;
+    color: $color-body;
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    a{
+      color: #8B8F99;
+    transition: .3s;
+    position: relative;
+    max-width: max-content;
+    &::after{
+      position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: $color-primary-5;
+    left: 29px;
+    bottom: 0;
+    transition: 0.3s;
+    }
+    &:hover{
+      color: $color-primary-5;
+      i{
+        color: #fff;
+      }
+      &::after{
+        width: 76%;
+      }
+    }
+    
+    }
+    i{
+      margin-right: 12px;
+      transition: 0.3s;
+    }
+  }
+}
+.mid-bg{
+  background: linear-gradient(180deg, #0E1422 -4.66%, #212631 100%);
+    border-radius: 15px;
+    padding: 40px;
+    margin: -40px 30px 0 30px;
+    p{
+      margin-bottom: 15px;
+    color: #fff;
+    font-size: $font-size-b2;
+    line-height: $line-height-b2;
+    font-weight: $p-regular;
+    
+
+    }
+    .contact-us{
+      display: block;
+    max-width: max-content;
+    background-color: $color-primary-5;
+    border-radius: 30px;
+    color: #fff;
+    padding: 17px 30px;
+    min-width: max-content;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+transition: .3s;
+&:hover{
+  background-color: $color-primary-alta;
+  color: #000;
+}
+    }
+}
+.left-thumbnail{
+  margin-right: 20px;
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+  img{
+    transition: .3s;
+  }
+
+  &:hover img{
+    transform: scale(1.2);
+
+  }
+}
+.post-right {
+  p{
+    margin-bottom: 0;
+    color: #8B8F99;
+    font-size: 14px;
+    margin-top: -6px;
+  }
+  h6{
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 0;
+    transition: .3s;
+    &:hover{
+      color: $color-primary-5;
+    }
+  }
+  .red-more{
+    color: $color-primary-5;
+    i{
+      margin-left: 6px;
+      margin-bottom: -4px;
+      position: relative;
+      transition: .3s;
+    }
+    &:hover i{
+      margin-left: 15px;
+    }
+  }
+}
+
+.rts-copyright-area{
+  border-top: 1px solid #21293D;
+    padding: 30px 0;
+    p{
+      font-size: 16px;
+    color: #fff;
+    }
+    &::after{
+      z-index: -1;
+      content: "";
+    position: absolute;
+    background-image: url(	https://reactheme.com/products/html/finbiz/assets/images/footer/h1-shape/01.svg);
+    height: 450px;
+    width: 450px;
+    right: -3%;
+    background-repeat: no-repeat;
+    bottom: -5%;
+    }
+ }
+.loading-animation{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  .left-animate{
+    width: 51%;
+position: absolute;
+left: 0;
+background-color: #fff;
+top: 0px;
+height: 100%;
+transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .right-animate{
+    width: 51%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+
+.loaded-left{
+  left: -100%;
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded-right{
+  right: -100%;
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 
 
 

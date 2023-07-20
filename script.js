@@ -17,6 +17,16 @@ let testimonialsCarousel = document.querySelector(".testimonials-carousel")
 let firstCardWidth = document.querySelector(".testimonials-item").offsetWidth;
 let testimonialsCarouselChildrens = [...testimonialsCarousel.children]
 let wrapper = document.querySelector(".wrapper")
+let left = document.querySelector(".left-animate");
+let right = document.querySelector(".right-animate");
+
+
+
+window.onload = function () {
+    left.style.left = "-100%";
+    right.style.right = "-100%";
+    
+}
 
 
 window.onscroll = ()=>{
