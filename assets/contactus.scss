@@ -1,0 +1,224 @@
+@import "variables", "main";
+
+
+
+.contact-banner{
+    padding: 150px 0px;
+    background-image: url(	https://reactheme.com/products/html/finbiz/assets/images/breadcrumb/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h1{
+        color: #fff;
+    }
+}
+.bread-tag {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 12px 30px;
+    background: #fff;
+    border-radius: 31px;
+    box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05);
+    max-width: max-content;
+    margin-left: auto;
+a:not(.active){
+    margin-right: 5px;
+    font-weight: 700;
+    &:hover{
+        color: $color-primary;
+    }
+}
+span {
+    color: $color-primary;
+}
+.active {
+    margin-right: 5px;
+    font-weight: 700;
+    margin-left: 5px;
+    color: #1C2539;
+    margin-right: 0;
+}
+}
+
+.contact {
+    padding: 120px 0px;
+    .single-contact-one-inner{
+        background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 15px;
+    height: 100%;
+    .thumbnail{
+        display: block;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    &:hover img{
+        transform: scale(1.1);
+    }
+    img{
+        width: 100%;
+        transition: .3s;
+
+    }
+    }
+    .content{
+        display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: $color-primary-alta;
+    .icone{
+        margin-right: 20px;
+    }
+    span{
+        margin-bottom: 0;
+        color: $color-primary;
+        font-weight: 500;
+    }
+    h5{
+        margin-bottom: 0;
+    transition: 0.3s;
+    font-weight: $s-bold;
+    &:hover{
+        color: $color-primary;
+    }
+    }
+    }
+    }
+}
+
+.contact-map-area{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    .contact-map{
+        width: 100%;
+        height: 580px;
+        border: 0;
+    }
+    .location{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+        max-width: 100px;
+        height: auto;
+    }
+}
+.contact-form{
+    padding: 120px 0px;
+}
+
+.rts-contact-fluid{
+  box-shadow:   0px 24px 39px rgba(0, 0, 0, 0.05);
+ 
+}
+.rts-title-area{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+ 
+    p{
+        color: $color-primary;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: -5px;
+    }
+    .h2{
+        margin-bottom: 24px;
+    }
+}
+.form-wrapper{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 80px;
+    input{
+        background: #F6F6F6;
+    height: 55px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid transparent;
+    padding: 0px 15px;
+    }
+    textarea{
+        height: 150px;
+        background: #F6F6F6;
+        border-radius: 15px;
+        padding: 15px 15px;
+        border: 1px solid transparent;
+        width: 100%;
+    }
+    .name-email{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+        width: 48.8%;
+    }
+    }
+    .rts-btn{
+        display: block;
+        max-width: max-content;
+        margin: auto;
+        margin-top: 30px;
+        padding: 17px 30px;
+    min-width: max-content;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: .3s;
+    background-color: $color-primary;
+    color: #fff;
+    &:hover{
+        background: $color-primary-alta;
+    color: #1C2539;
+    }
+    }
+}
+.spinner-contact{
+    opacity: 1;
+    transition: 0.3s opacity;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 5px solid transparent;
+    border-top-color: #dca8a8;
+    border-radius: 100%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 10001;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      right: 4px;
+      bottom: 4px;
+      border: 5px solid transparent;
+      border-top-color: #cf1414;
+      border-radius: 100%;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      border: 5px solid transparent;
+      border-top-color: #ff0000;
+      border-radius: 100%;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite;
+    }
+  }

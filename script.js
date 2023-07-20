@@ -19,13 +19,18 @@ let testimonialsCarouselChildrens = [...testimonialsCarousel.children]
 let wrapper = document.querySelector(".wrapper")
 let left = document.querySelector(".left-animate");
 let right = document.querySelector(".right-animate");
-
-
+let loadingAnimation = document.querySelector(".loading-animation")
+let spinner = document.querySelector(".spinner")
 
 window.onload = function () {
     left.style.left = "-100%";
     right.style.right = "-100%";
-    
+    spinner.style.opacity = "0"
+    setTimeout(() => {
+       
+        loadingAnimation.classList.add("d-none");
+    }, 1000);
+  
 }
 
 
