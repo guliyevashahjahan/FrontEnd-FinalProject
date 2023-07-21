@@ -1301,7 +1301,7 @@ header .header-top a {
   color: #DF0A0A;
 }
 
-.footer {
+.footer-section {
   background-repeat: no-repeat;
   background: #0E1422;
   position: relative;
@@ -1309,7 +1309,7 @@ header .header-top a {
   z-index: 1;
   padding-top: 120px;
 }
-.footer::before {
+.footer-section::before {
   content: "";
   position: absolute;
   background-image: url(https://reactheme.com/products/html/finbiz/assets/images/footer/h1-shape/02.png);
@@ -1321,7 +1321,7 @@ header .header-top a {
   z-index: -1;
   background-repeat: no-repeat;
 }
-.footer .input-background {
+.footer-section .input-background {
   background-image: url(https://reactheme.com/products/html/finbiz/assets/images/footer/callto-action.png);
   background-repeat: no-repeat;
   background-color: #DF0A0A;
@@ -1333,27 +1333,27 @@ header .header-top a {
      object-fit: contain;
   background-size: cover;
 }
-.footer .left-wrapper {
+.footer-section .left-wrapper {
   margin-left: 80px;
   padding: 45px 0;
 }
-.footer .left-wrapper p {
+.footer-section .left-wrapper p {
   margin-bottom: 0;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 16px;
 }
-.footer .left-wrapper h3 {
+.footer-section .left-wrapper h3 {
   color: #fff;
   margin-bottom: 0;
   margin-top: -5px;
 }
-.footer .input-area {
+.footer-section .input-area {
   padding: 60px 0;
   position: relative;
 }
-.footer .input-area input {
+.footer-section .input-area input {
   background: #FFFFFF;
   border-radius: 100px;
   height: 55px;
@@ -1363,7 +1363,7 @@ header .header-top a {
   outline: none;
   border: none;
 }
-.footer .input-area button {
+.footer-section .input-area button {
   border: none;
   background-color: #B00F0F;
   border-radius: 30px;
@@ -1378,7 +1378,7 @@ header .header-top a {
   color: #fff;
   transition: 0.3s;
 }
-.footer .input-area button:hover {
+.footer-section .input-area button:hover {
   color: #000;
 }
 
